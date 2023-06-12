@@ -1,0 +1,7 @@
+// Este deno.json configuraria as permissões de acesso de rede, leitura e gravação para todas as partes do seu projeto. Você pode ajustá-las de acordo com as necessidades do seu projeto.
+{
+    "allow-net": true,
+    "allow-read": true,
+    "allow-write": true
+}
+  
