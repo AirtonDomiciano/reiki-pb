@@ -10,6 +10,7 @@ let resumeData = {
   skypeid: "Your skypeid",
   items: [
     {
+      id: 1,
       author: "Valeria Schuster",
       topic: "Salome",
       title: "Cigana",
@@ -17,14 +18,16 @@ let resumeData = {
       img: img1,
     },
     {
+      id: 2,
       author: "Valeria Schuster",
       topic: "Cartomancia",
-      title: "Tarot ",
+      title: "Tarot",
       description:
         "Faça uma consulta de cartas do baralho e descubra sua sorte com a Astral On Line",
       img: img2,
     },
     {
+      id: 3,
       author: "Valeria Schuster",
       title: "Reiki",
       topic: "convencionais",
@@ -33,6 +36,7 @@ let resumeData = {
       img: img3,
     },
     {
+      id: 4,
       author: "Valeria Schuster",
       title: "auriculoterapia",
       topic: "Curas",

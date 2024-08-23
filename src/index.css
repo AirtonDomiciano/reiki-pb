@@ -208,7 +208,7 @@ header a {
 
 .carousel.next .thumbnail .item:nth-last-child(1) {
   overflow: hidden;
-  animation: showThumbnail 0.5s linear 1 forwards;
+  animation: showThumbnail 0.8s linear 1 forwards;
 }
 
 @keyframes showThumbnail {
@@ -218,18 +218,18 @@ header a {
   }
 }
 
+.carousel.prev .list .item img {
+  z-index: 100;
+}
+
+.carousel.next .thumbnail {
+  animation: effectNext 0.8s linear 1 forwards;
+}
+
 @keyframes effectNext {
   from {
     transform: translateX(150px);
   }
-}
-
-/* .carousel.prev .list .item img {
-  z-index: 100;
-} */
-
-.carousel.next .thumbnail {
-  animation: effectNext 0.1s linear 1 forwards;
 }
 
 /* -------------------------------- */
@@ -241,7 +241,7 @@ header a {
 }
 
 .carousel.prev .list .item:nth-child(2) img {
-  animation: outFrame 0.5s linear 1 forwards;
+  animation: outFrame 0.8s linear 1 forwards;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -260,7 +260,7 @@ header a {
 .carousel.prev .thumbnail .item:nth-child(1) {
   overflow: hidden;
   opacity: 0;
-  animation: showThumbnail 0.5s linear 1 forwards;
+  animation: showThumbnail 0.8s linear 1 forwards;
 }
 
 .carousel.prev .list .item:nth-child(2) .content .author,
@@ -268,7 +268,7 @@ header a {
 .carousel.prev .list .item:nth-child(2) .content .topic,
 .carousel.prev .list .item:nth-child(2) .content .des,
 .carousel.prev .list .item:nth-child(2) .content .buttons {
-  animation: contentOut 1.5s linear 1 forwards !important;
+  animation: contentOut 0.8s linear 1 forwards !important;
 }
 
 @keyframes contentOut {
@@ -280,10 +280,11 @@ header a {
 }
 
 /* FUNFA COM O TIMER kk */
-/* .carousel.next .arrows button,
+
+.carousel.next .arrows button,
 .carousel.prev .arrows button {
   pointer-events: none;
-} */
+}
 
 /* -------------------------------- */
 /*          running time            */
@@ -301,8 +302,9 @@ header a {
 
 .carousel.next .time,
 .carousel.prev .time {
-  animation: runningTime 3s linear 1 forwards;
+  animation: runningTime 0.8s linear 1 forwards;
 }
+
 @keyframes runningTime {
   from {
     width: 100%;
@@ -334,18 +336,21 @@ header a {
   display: flex;
   gap: 20px;
 }
+
 .thumbnail .item {
   width: 150px;
   height: 220px;
   flex-shrink: 0;
   position: relative;
 }
+
 .thumbnail .item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 20px;
 }
+
 .thumbnail .item .content {
   color: #fff;
   position: absolute;
@@ -353,9 +358,11 @@ header a {
   left: 10px;
   right: 10px;
 }
+
 .thumbnail .item .content .title {
   font-weight: 500;
 }
+
 .thumbnail .item .content .description {
   font-weight: 300;
 }

@@ -5,6 +5,13 @@ import ThumbnailItem from "./ThumbnailItem";
 const Carousel = (props) => {
   const { items } = props.resumeData;
 
+  const itemsThumbnail = [];
+
+  itemsThumbnail.push(items[1]);
+  itemsThumbnail.push(items[2]);
+  itemsThumbnail.push(items[3]);
+  itemsThumbnail.push(items[0]);
+
   const carouselRef = useRef(null);
   const sliderRef = useRef(null);
   const thumbnailRef = useRef(null);
@@ -16,10 +23,8 @@ const Carousel = (props) => {
     const carouselDom = carouselRef.current;
     const SliderDom = sliderRef.current;
     const thumbnailBorderDom = thumbnailRef.current;
-    const timeDom = timeRef.current;
-    // const thumbnailItemsDom = thumbnailBorderDom.querySelectorAll(".item");
 
-    let timeRunning = 3000;
+    let timeRunning = 1000;
     let timeAutoNext = 7000;
 
     const nextDom = nextButtonRef.current;
@@ -30,21 +35,27 @@ const Carousel = (props) => {
       const thumbnailItemsDom = thumbnailBorderDom.querySelectorAll(".item");
 
       if (type === "next") {
-        SliderDom.appendChild(SliderItemsDom[0]);
-        thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
+        const firstItem = SliderItemsDom[0];
+        const firstThumbnail = thumbnailItemsDom[0];
+
+        SliderDom.appendChild(firstItem);
+        thumbnailBorderDom.appendChild(firstThumbnail);
+
         carouselDom.classList.add("next");
       } else {
-        SliderDom.prepend(SliderItemsDom[SliderItemsDom.length - 1]);
-        thumbnailBorderDom.prepend(
-          thumbnailItemsDom[thumbnailItemsDom.length - 1]
-        );
+        const lastItem = SliderItemsDom[SliderItemsDom.length - 1];
+        const lastThumbnail = thumbnailItemsDom[thumbnailItemsDom.length - 1];
+
+        SliderDom.prepend(lastItem);
+        thumbnailBorderDom.prepend(lastThumbnail, thumbnailItemsDom[0]);
+
         carouselDom.classList.add("prev");
       }
 
-      // setTimeout(() => {
-      //   carouselDom.classList.remove("next");
-      //   carouselDom.classList.remove("prev");
-      // }, timeRunning);
+      setTimeout(() => {
+        carouselDom.classList.remove("next");
+        carouselDom.classList.remove("prev");
+      }, timeRunning);
 
       // setTimeout(() => {
       //   nextDom.click();
@@ -77,7 +88,7 @@ const Carousel = (props) => {
       </div>
 
       <div className="thumbnail" ref={thumbnailRef}>
-        {items.map((item, index) => (
+        {itemsThumbnail.map((item, index) => (
           <ThumbnailItem key={index} {...item} />
         ))}
       </div>

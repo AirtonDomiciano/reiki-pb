@@ -2,7 +2,7 @@ import React from "react";
 
 const ListItem = ({ img, author, title, topic, description }) => {
   return (
-    <div className="item">
+    <div id={title + " - carousel"} className="item">
       <img src={img} alt={title} />
       <div className="content">
         <div className="author">{author}</div>
