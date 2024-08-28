@@ -1,0 +1,32 @@
+.arrows {
+  position: absolute;
+  top: 65%;
+  right: 57%;
+  z-index: 100;
+  width: 320px;
+  max-width: 30%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.arrows button {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background-color: #eee4;
+  border: none;
+  color: #fff;
+  font-family: monospace;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.arrows button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.btn-see-more {
+  cursor: pointer;
+}

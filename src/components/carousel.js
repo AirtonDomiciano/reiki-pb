@@ -25,7 +25,7 @@ const Carousel = (props) => {
     const thumbnailBorderDom = thumbnailRef.current;
 
     let timeRunning = 1000;
-    let timeAutoNext = 7000;
+    // let timeAutoNext = 7000;
 
     const nextDom = nextButtonRef.current;
     const prevDom = prevButtonRef.current;

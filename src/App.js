@@ -8,9 +8,9 @@ const App = () => {
     <div className="App">
       <header>
         <nav>
-          <a href="#">Home</a>
-          <a href="#">Contacts</a>
-          <a href="#">Info</a>
+          {/* <a href="#">Home</a> */}
+          {/* <a href="#">Contacts</a> */}
+          {/* <a href="#">Info</a> */}
         </nav>
       </header>
       <Carousel resumeData={resumeData} />

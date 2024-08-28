@@ -1,5 +1,5 @@
 import img1 from "../images/cigana.jpg";
-import img2 from "../images/tarot.jpg";
+import img2 from "../images/tarot.webp";
 import img3 from "../images/reiki.webp";
 import img4 from "../images/auriculo.jpg";
 
@@ -11,6 +11,7 @@ let resumeData = {
   items: [
     {
       id: 1,
+      url: 'sobre-a-cigana',
       author: "Valeria Schuster",
       topic: "Salome",
       title: "Cigana",
@@ -19,6 +20,7 @@ let resumeData = {
     },
     {
       id: 2,
+      url: 'sobre-o-tarot',
       author: "Valeria Schuster",
       topic: "Cartomancia",
       title: "Tarot",
@@ -28,20 +30,20 @@ let resumeData = {
     },
     {
       id: 3,
+      url: 'sobre-o-reiki',
       author: "Valeria Schuster",
       title: "Reiki",
       topic: "convencionais",
-      description:
-        "Durante uma sessão de Reiki, o praticante canaliza essa energia vital universal para o paciente, geralmente através da imposição das mãos sobre ou próximo ao corpo. A energia flui para as áreas que mais necessitam, ajudando a dissolver bloqueios energéticos e promovendo a cura e o bem-estar geral.",
+      description: "Durante uma sessão de Reiki, o praticante canaliza essa energia vital universal para o paciente.",
       img: img3,
     },
     {
       id: 4,
+      url: 'sobre-a-auriculoterapia',
       author: "Valeria Schuster",
       title: "auriculoterapia",
       topic: "Curas",
-      description:
-        "As terapias alternativas como a acupuntura têm sido cada vez mais procuradas para solucionar problemas relacionados ao corpo, já que costumam serem pouco invasivas e geralmente apresentam uma série de benefícios complementares à saúde.",
+      description: "As terapias alternativas como a acupuntura têm sido cada vez mais procuradas para solucionar problemas relacionados ao corpo .",
       img: img4,
     },
   ],
