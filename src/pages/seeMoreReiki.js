@@ -1,6 +1,6 @@
 import React from "react";
 
-import mestra from "../images/mestre-reiki.png";
+// import mestra from "../images/mestre-reiki.png";
 
 const SeeMoreReiki = () => {
   // const onClickBack = () => {};
@@ -8,7 +8,7 @@ const SeeMoreReiki = () => {
   return (
     <div className="see-more-reiki">
       <div className="card-see">
-        <img src={mestra} alt="Foto" />
+        {/* <img src={mestra} alt="Foto" /> */}
         <div className="text">
           <h1>Mestra Valéria Schuster</h1>
           <p>

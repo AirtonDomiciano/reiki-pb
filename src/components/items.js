@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-const ListItem = ({ url, img, author, title, topic, description }) => {
+const Items = ({ url, img, author, title, topic, description }) => {
   const navigate = useNavigate();
 
   const seeMore = (url) => {
@@ -30,4 +30,4 @@ const ListItem = ({ url, img, author, title, topic, description }) => {
   );
 };
 
-export default ListItem;
+export default Items;

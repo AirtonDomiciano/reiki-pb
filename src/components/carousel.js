@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
-import ListItem from "./ListItem";
-import ThumbnailItem from "./ThumbnailItem";
+import Items from "./items";
+import Thumbnail from "./Thumbnail";
 
 const Carousel = (props) => {
   const { items } = props.resumeData;
@@ -83,13 +83,13 @@ const Carousel = (props) => {
     <div className="carousel" ref={carouselRef}>
       <div className="list" ref={sliderRef}>
         {items.map((item, index) => (
-          <ListItem key={index} {...item} />
+          <Items key={index} {...item} />
         ))}
       </div>
 
       <div className="thumbnail" ref={thumbnailRef}>
         {itemsThumbnail.map((item, index) => (
-          <ThumbnailItem key={index} {...item} />
+          <Thumbnail key={index} {...item} />
         ))}
       </div>
 
