@@ -5,8 +5,7 @@ const Items = ({ url, img, author, title, topic, description }) => {
   const navigate = useNavigate();
 
   const seeMore = (url) => {
-    navigate(`/${url}`, { replace: true });
-    console.log(url);
+    navigate(`/${url}`);
   };
 
   const contact = () => {};
@@ -23,7 +22,7 @@ const Items = ({ url, img, author, title, topic, description }) => {
           <button className="btn-see-more" onClick={() => seeMore(url)}>
             Saiba mais
           </button>
-          <button onClick={contact}>Contato</button>
+          <button onClick={contact}>Agende</button>
         </div>
       </div>
     </div>

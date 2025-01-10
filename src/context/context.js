@@ -11,7 +11,7 @@ let resumeData = {
   items: [
     {
       id: 1,
-      url: 'reiki',
+      url: 'sobre-o-reiki',
       author: "Valeria Schuster",
       title: "Reiki",
       topic: "Uma técnica de cura energética que atua por meio da imposição das mãos",
@@ -22,7 +22,7 @@ let resumeData = {
     },
     {
       id: 2,
-      url: 'constelacao',
+      url: 'sobre-a-constelacao',
       author: "Valeria Schuster",
       title: "Constelação",
       topic: "Uma abordagem terapêutica que desvela padrões ocultos nos sistemas familiares.",
@@ -33,7 +33,7 @@ let resumeData = {
     },
     {
       id: 3,
-      url: 'tarot',
+      url: 'sobre-o-tarot',
       author: "Valeria Schuster",
       title: "Tarot",
       topic: "Uma ferramenta simbólica para autoconhecimento e tomada de decisões.",
@@ -44,7 +44,7 @@ let resumeData = {
     },
     {
       id: 4,
-      url: 'hipnose',
+      url: 'sobre-a-hipnose',
       author: "Valeria Schuster",
       title: "Hipnose",
       topic: "Uma prática terapêutica que utiliza o estado hipnótico para mudanças positivas.",
